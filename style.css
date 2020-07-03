@@ -20,7 +20,7 @@ h4 {
     max-width: 1060px;
     margin: 0 auto;
     padding: 0 15px;
-}  
+}
 
 /* HEADER START */
 
@@ -334,7 +334,7 @@ li {
 
 @keyframes progress {
     0% {
-        stroke-dasharray: 0 100;
+        stroke-dasharray: 100;
     }
 }
 
