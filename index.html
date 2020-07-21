@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Max Zhukov</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/8eb688fe6b.js" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 </head>
 <body>
 
@@ -124,75 +128,225 @@
     <h1 class="skills-title" align="center">Skills</h1>
     <h4 class="skills-title-sm" align="center">My Skills</h4>
 
-    <div class="flex-wrapper">
-        <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circular-chart orange">
-                <path class="circle-bg"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                      stroke-dasharray="80, 100"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <img class="skills-icon" src="./img/svg/html-5.svg" alt="HTML" width="25%" height="25%">
-            </svg>
+    <div class="skills__cards">
+        <div class="skill__card">
+            <img class="skill-card-img" src="img/svg/javascript.svg" alt="JavaScript">
+            <p class="skill-card-title">JavaScript</p>
+            <p class="skill-card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut beatae distinctio dolor ea expedita</p>
+        </div>
+        <div class="skill__card">
+            <img class="skill-card-img" src="img/svg/javascript.svg" alt="JavaScript">
+            <p class="skill-card-title">JavaScript</p>
+            <p class="skill-card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut beatae distinctio dolor ea expedita</p>
+        </div>
+        <div class="skill__card">
+            <img class="skill-card-img" src="img/svg/javascript.svg" alt="JavaScript">
+            <p class="skill-card-title">JavaScript</p>
+            <p class="skill-card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut beatae distinctio dolor ea expedita</p>
+        </div>
+        <div class="skill__card">
+            <img class="skill-card-img" src="img/svg/javascript.svg" alt="JavaScript">
+            <p class="skill-card-title">JavaScript</p>
+            <p class="skill-card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut beatae distinctio dolor ea expedita</p>
+        </div>
+    </div>
+    <div class="skills-small">
+        <div class="skill-small">
+            <p class="align"><i class="far fa-star fa-3x"></i></p>
+            <p class="skill-small-name">Git</p>
+        </div>
+        <div class="skill-small">
+            <p class="align"><i class="far fa-star fa-3x"></i></p>
+            <p class="skill-small-name">Git</p>
+        </div>
+        <div class="skill-small">
+            <p class="align"><i class="far fa-star fa-3x"></i></p>
+            <p class="skill-small-name">Git</p>
+        </div>
+        <div class="skill-small">
+            <p class="align"><i class="far fa-star fa-3x"></i></p>
+            <p class="skill-small-name">Git</p>
+        </div>
+        <div class="skill-small">
+            <p class="align"><i class="far fa-star fa-3x"></i></p>
+            <p class="skill-small-name">Git</p>
+        </div>
+        <div class="skill-small">
+            <p class="align"><i class="far fa-star fa-3x"></i></p>
+            <p class="skill-small-name">Git</p>
         </div>
 
-        <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circular-chart green">
-                <path class="circle-bg"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                      stroke-dasharray="85, 100"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <img class="skills-icon" src="./img/svg/css.svg" alt="HTML" width="25%" height="25%">
-            </svg>
-        </div>
+    </div>
+    <!-- SKILLS END -->
 
-        <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circular-chart blue">
-                <path class="circle-bg"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                      stroke-dasharray="50, 100"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <img class="skills-icon" src="./img/svg/javascript.svg" alt="HTML" width="25%" height="25%">
-            </svg>
+    <!-- PORTFOLIO START -->
+
+    <h1 class="portfolio-title" align="center">Works</h1>
+    <h4 class="portfolio-title-sm" align="center">My Works</h4>
+
+    <div class="test-container">
+    <div class="glide">
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">PREV</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">NEXT</button>
         </div>
-        <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circular-chart blue">
-                <path class="circle-bg"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                      stroke-dasharray="30, 100"
-                      d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <img class="skills-icon" src="./img/svg/nodejs.svg" alt="HTML" width="25%" height="25%">
-            </svg>
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><div class="card">
+
+                    <div class="card-menu">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="card-img"><img src="gif/rock.gif" alt="site" width="450px"></div>
+                    <div class="card-text">
+                        <p class="card-title">Excel Copy</p>
+                        <p class="card-desc">A large project written in a native JavaScript, repeating the functionality of the original Excel.</p>
+                        <a href="https://maxizhukov.github.io/excel-course/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
+                    </div>
+
+                </div></li>
+                <li class="glide__slide"><div class="card">
+
+                    <div class="card-menu">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="card-img"><img src="gif/rock.gif" alt="site" width="450px"></div>
+                    <div class="card-text">
+                        <p class="card-title">Rock Paper Scissors</p>
+                        <p class="card-desc">Simple and well-known game on the native JavaScript to compete with the computer.</p>
+                        <a href="https://maxizhukov.github.io/Rock-Paper-Scissors-Game/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
+                    </div>
+
+                </div></li>
+                <li class="glide__slide"><div class="card">
+
+                    <div class="card-menu">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="card-img"><img src="gif/budget.gif" alt="site" width="450px"></div>
+                    <div class="card-text">
+                        <p class="card-title">Budget Planer</p>
+                        <p class="card-desc">Small SPA on a pure JavaScript for revenue and expense accounting with using local storage</p>
+                        <a href="https://maxizhukov.github.io/Budget-Planer/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
+                    </div>
+
+                </div></li>
+                <li class="glide__slide"><div class="card">
+
+                    <div class="card-menu">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="card-img"><img src="gif/todo.gif" alt="site" width="450px"></div>
+                    <div class="card-text">
+                        <p class="card-title">Advanced To Do List</p>
+                        <p class="card-desc">A more sophisticated version of a simple application for a business office with the addition of local storage, success bar and sound elements.</p>
+                        <a href="https://maxizhukov.github.io/Advanced-Todo-App/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
+                    </div>
+
+                </div></li>
+                <li class="glide__slide"><div class="card">
+
+                    <div class="card-menu">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="card-img"><img src="gif/bot.gif" alt="site" width="450px"></div>
+                    <div class="card-text">
+                        <p class="card-title">Business game for telegram</p>
+                        <p class="card-desc">A small game for a chain of restaurants, with the generation of code for discounts. The bot is currently in sleep mode.</p>
+                        <a href="https://maxizhukov.github.io/telegram_game_front/#" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
+                    </div>
+
+                </div></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 3,
+            breakpoints: {
+                1400: {
+                    perView: 2
+                },
+                900: {
+                    perView: 1
+                }
+            }
+
+        }
+        new Glide('.glide', config).mount()
+    </script>
+
+    <!-- PORTFOLIO END -->
+
+    <!-- CONTACT START -->
+
+    <h1 class="portfolio-title" align="center">Contact</h1>
+    <h4 class="portfolio-title-sm" align="center">Contact Me</h4>
+
+    <div class="contact-container">
+    <div id='map'></div>
+    <div class="contact">
+        <div class="contact-div">
+        <p class="phone"><i class="fas fa-phone-square-alt"></i>+4368181269902</p>
+        </div>
+        <div class="contact-div">
+            <p class="mail"><i class="fas fa-envelope"></i>zhukovmax1111@gmail.com</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiemh1a292bTczIiwiYSI6ImNrY3c1c3E1OTBiMW4zMHF1d2huZXgza24ifQ.oz5rDG9NJ_AmrpcgMrHkJQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [16.406156, 48.218232],
+            zoom: 13
+        });
+        var marker = new mapboxgl.Marker()
+            .setLngLat([16.406156, 48.218232])
+            .addTo(map);
+        map.setStyle('mapbox://styles/mapbox/light-v10')
+    </script>
+
+
+    <!-- CONTACT END -->
+
+    <!-- FOOTER START -->
+
+    <div class="footer-container">
+        <a href="index.html" class="footer-logo"><img class="header-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="250px"></a>
+        <div class="social-links-footer">
+            <a href="https://www.facebook.com/maksym.zhukov?fref=profile_friend_list&hc_location=friends_tab" target="_blank" class="social-link">
+                <img src="./img/svg/facebooklogo.svg" alt="facebook" class="link-social-footer" width="60px" height="60px">
+            </a>
+            <a href="https://www.youtube.com/channel/UC1qrkzwCcAYuIkCNSqAmw7A?view_as=subscriber" target="_blank" class="social-link">
+                <img src="./img/svg/youtubeicon.svg" alt="youtube" class="link-social-footer" width="60px" height="60px">
+            </a>
+            <a href="https://github.com/maxizhukov" target="_blank" class="social-link">
+                <img src="./img/svg/githubicon.svg" alt="github" class="link-social-footer" width="60px" height="60px">
+            </a>
+            <a href="https://www.linkedin.com/in/maksym-zhukov-89508b1a9/" target="_blank" class="social-link">
+                <img src="./img/svg/linkedinlogo.svg" alt="linkedin" class="link-social-footer" width="60px" height="60px">
+            </a>
+            <a href="https://www.instagram.com/zhukov_m23/?hl=de" target="_blank" class="social-link">
+                <img src="./img/svg/instagramicon.svg" alt="instagram" class="link-social-footer" width="60px" height="60px">
+            </a>
         </div>
     </div>
 
-    <!-- SKILLS START -->
+    <!-- FOOTER END -->
 </body>
 </html>
