@@ -371,8 +371,8 @@ li {
 }
 
 .card {
-    width: 450px;
-    height: 490px;
+    width: 650px;
+    height: 590px;
     border-radius: 10px 10px 0 0;
     background: #eaeaea;
 }
@@ -416,12 +416,15 @@ li {
     font-weight: bold;
     padding-left: 5px;
     line-height: 0.3rem;
+    text-align: center;
 }
 
 .card-desc {
     padding-left: 5px;
     font-size: 24px;
     padding-right: 5px;
+    text-align: center;
+    height: 120px;
 }
 
 .card-link {
@@ -448,29 +451,88 @@ li {
     margin-bottom: 160px;
 }
 
-.glide__arrows {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 35px;
-}
-
-.glide__arrow--right, .glide__arrow--left {
-    font-weight: bold;
-    font-size: 30px;
-    background: transparent;
-    border: 2px solid black;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.glide__arrow--right:hover, .glide__arrow--left:hover {
-    border: 2px solid #435e5d;
-    color: #435e5d;
-    transition: 0.3s;
-}
-
 /* PORTFOLIO END */
+
+
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 590px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 5px 0 0 5px;
+}
+.slider .next {
+    right: 0;
+    border-radius: 0 5px 5px 0;
+}
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-dots {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.prev, .next {
+    background-color: #3e3d3d;
+}
+.item {
+
+}
+
 
 /* CONTACT START*/
 

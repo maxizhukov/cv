@@ -184,114 +184,111 @@
     <h1 class="portfolio-title" align="center">Works</h1>
     <h4 class="portfolio-title-sm" align="center">My Works</h4>
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
-
-    <div class="test-container">
-    <div class="glide">
-        <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">PREV</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">NEXT</button>
-        </div>
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-                <li class="glide__slide"><div class="card">
-
+    <div class="slider">
+        <div class="item">
+            <div class="card-container">
+                <div class="card">
                     <div class="card-menu">
                         <div class="red"></div>
                         <div class="yellow"></div>
                         <div class="green"></div>
                     </div>
-                    <div class="card-img"><img src="gif/rock.gif" alt="site" width="450px"></div>
+                    <div class="card-img"><img src="gif/excel.gif" alt="site" width="100%"></div>
                     <div class="card-text">
                         <p class="card-title">Excel Copy</p>
                         <p class="card-desc">A large project written in a native JavaScript, repeating the functionality of the original Excel.</p>
-                        <a href="https://maxizhukov.github.io/excel-course/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                </div></li>
-                <li class="glide__slide"><div class="card">
-
+        <div class="item">
+            <div class="card-container">
+                <div class="card">
                     <div class="card-menu">
                         <div class="red"></div>
                         <div class="yellow"></div>
                         <div class="green"></div>
                     </div>
-                    <div class="card-img"><img src="gif/rock.gif" alt="site" width="450px"></div>
+                    <div class="card-img"><img src="gif/rock.gif" alt="site" width="100%"></div>
                     <div class="card-text">
                         <p class="card-title">Rock Paper Scissors</p>
                         <p class="card-desc">Simple and well-known game on the native JavaScript to compete with the computer.</p>
                         <a href="https://maxizhukov.github.io/Rock-Paper-Scissors-Game/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                </div></li>
-                <li class="glide__slide"><div class="card">
-
+        <div class="item">
+            <div class="card-container">
+                <div class="card">
                     <div class="card-menu">
                         <div class="red"></div>
                         <div class="yellow"></div>
                         <div class="green"></div>
                     </div>
-                    <div class="card-img"><img src="gif/budget.gif" alt="site" width="450px"></div>
+                    <div class="card-img"><img src="gif/budget.gif" alt="site" width="100%"></div>
                     <div class="card-text">
                         <p class="card-title">Budget Planer</p>
                         <p class="card-desc">Small SPA on a pure JavaScript for revenue and expense accounting with using local storage</p>
                         <a href="https://maxizhukov.github.io/Budget-Planer/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                </div></li>
-                <li class="glide__slide"><div class="card">
-
+        <div class="item">
+            <div class="card-container">
+                <div class="card">
                     <div class="card-menu">
                         <div class="red"></div>
                         <div class="yellow"></div>
                         <div class="green"></div>
                     </div>
-                    <div class="card-img"><img src="gif/todo.gif" alt="site" width="450px"></div>
+                    <div class="card-img"><img src="gif/todo.gif" alt="site" width="100%"></div>
                     <div class="card-text">
                         <p class="card-title">Advanced To Do List</p>
                         <p class="card-desc">A more sophisticated version of a simple application for a business office with the addition of local storage, success bar and sound elements.</p>
                         <a href="https://maxizhukov.github.io/Advanced-Todo-App/" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                </div></li>
-                <li class="glide__slide"><div class="card">
-
+        <div class="item">
+            <div class="card-container">
+                <div class="card">
                     <div class="card-menu">
                         <div class="red"></div>
                         <div class="yellow"></div>
                         <div class="green"></div>
                     </div>
-                    <div class="card-img"><img src="gif/bot.gif" alt="site" width="450px"></div>
+                    <div class="card-img"><img src="gif/bot.gif" alt="site" width="100%"></div>
                     <div class="card-text">
                         <p class="card-title">Business game for telegram</p>
                         <p class="card-desc">A small game for a chain of restaurants, with the generation of code for discounts. The bot is currently in sleep mode.</p>
                         <a href="https://maxizhukov.github.io/telegram_game_front/#" target="_blank" class="card-link"><span class="thin">VIEW</span><span class="thick">PAGE</span></a>
                     </div>
-
-                </div></li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
     </div>
 
-    <script>
-        const config = {
-            type: 'carousel',
-            perView: 3,
-            breakpoints: {
-                1400: {
-                    perView: 2
-                },
-                900: {
-                    perView: 1
-                }
-            }
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+    </div>
 
-        }
-        new Glide('.glide', config).mount()
-    </script>
+
     <!-- PORTFOLIO END -->
+
 
     <!-- CONTACT START -->
 
