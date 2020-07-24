@@ -4,7 +4,7 @@ const header = document.querySelector('.header')
 
 window.addEventListener('scroll', function() {
     if (pageYOffset > 40) {
-        header.style.background = 'black'
+        header.style.background = '#4e4e4e'
     } else {
         header.style.background = 'transparent'
     }
