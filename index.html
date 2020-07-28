@@ -19,11 +19,21 @@
         <header class="header">
             <img class="header-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="250px">
                 <nav class="header-nav">
-                    <a href="#" class="link">About Me</a>
-                    <a href="#" class="link">Education</a>
-                    <a href="#" class="link">Skills</a>
-                    <a href="#" class="link">My Works</a>
-                    <a href="#" class="link">Contact</a>
+                    <a href="#about" class="btn btn-one">
+                        <span class="link">About Me</span>
+                    </a>
+                    <a href="#education" class="btn btn-one">
+                        <span class="link">Education</span>
+                    </a>
+                    <a href="#skills" class="btn btn-one">
+                        <span class="link">Skills</span>
+                    </a>
+                    <a href="#works" class="btn btn-one">
+                        <span class="link">My Works</span>
+                    </a>
+                    <a href="#contact" class="btn btn-one">
+                        <span class="link">Contact</span>
+                    </a>
                 </nav>
         </header>
     </div>
@@ -32,7 +42,7 @@
 
     <!-- ABOUT START -->
 
-    <section class="about-me">
+    <section class="about-me" id="about">
         <div class="about-wrap">
             <div class="about-cards">
                 <div class="about-card">
@@ -69,7 +79,7 @@
     <!-- ABOUT END -->
 
     <!-- EDUCATION START -->
-    <h1 class="edu-title" align="center">Education</h1>
+    <h1 class="edu-title" align="center" id="education">Education</h1>
     <h4 class="edu-title-sm" align="center">Education</h4>
 
     <div class="timeline">
@@ -78,7 +88,7 @@
             <li><div class="content">
                 <h2>Alexandrovskaya Gymnasium</h2>
                 <p class="about-education">Its the best school ever Its the best school ever sfgf dsfsd   fgdfg dfgdfge fdgdfg sdfsdf srgffg dsfsf sdfsrf srgffsg sdfsef sdfsdfr tgtgdfger.</p>
-                <div class="btn from-top">Certificate Download</div>
+                <div class="btn-timeline from-top">Certificate Download</div>
             </div>
                 <div class="time">
                     <h3>2003 - 2014</h3>
@@ -89,7 +99,7 @@
                     <img src="./img/svg/wulogo.svg" alt="Alexandrovskaya" class="logo-education" width="85px" height="50px">
                     <h2>Vienna University of Economics</h2>
                     <p class="about-education">Its the best school ever Its the best school ever sfgf dsfsd   fgdfg dfgdfge fdgdfg sdfsdf srgffg dsfsf sdfsrf srgffsg sdfsef sdfsdfr tgtgdfger.</p>
-                    <div class="btn from-top oddi">Certificate Download</div>
+                    <div class="btn-timeline from-top oddi">Certificate Download</div>
                 </div>
                 <div class="time">
                     <h3>2018 - 2021</h3>
@@ -100,7 +110,7 @@
                     <img src="./img/svg/udemylogo.svg" alt="Alexandrovskaya" class="logo-education" width="80px" height="80px">
                     <h2>JavaScript Algorithms and Data Structures</h2>
                     <p class="about-education">Big O notation, Recursion, Common programming patterns, Searching algorithms and Dijkstra's Shortest Path Algorithm. Switching gears and implement of data structures from scratch, including linked lists, trees, heaps, hash tables, and graphs.</p>
-                    <div class="btn from-top">Certificate Download</div>
+                    <div class="btn-timeline from-top">Certificate Download</div>
                 </div>
                 <div class="time">
                     <h3>Soon</h3>
@@ -111,7 +121,7 @@
                     <img src="./img/svg/jslogo.png" alt="Alexandrovskaya" class="logo-education" width="50px" height="50px">
                     <h2>JavaScript become a Senior Frontend Developer</h2>
                     <p class="about-education">Learned technologies: Webpack, Jest, ESLint, Git, SASS, Git Flow and the Object-oriented programming. Creating own Excel spreadsheets without using any libraries</p>
-                    <div class="btn from-top oddi">Certificate Download</div>
+                    <div class="btn-timeline from-top oddi">Certificate Download</div>
                 </div>
                 <div class="time">
                     <h3>Soon</h3>
@@ -125,7 +135,7 @@
 
     <!-- SKILLS START -->
 
-    <h1 class="skills-title" align="center">Skills</h1>
+    <h1 class="skills-title" align="center" id="skills">Skills</h1>
     <h4 class="skills-title-sm" align="center">My Skills</h4>
 
     <div class="skills__cards">
@@ -177,11 +187,29 @@
         </div>
 
     </div>
+    <div class="skills-counter-container">
+        <div class="skills-counter">
+            <div class="counter-title">
+                <p class="counter-title-text">Hours of coding</p>
+            </div>
+            <div class="counter-box">
+                <p class="counter-hours">235</p>
+            </div>
+        </div>
+        <div class="skills-counter">
+            <div class="counter-title">
+                <p class="counter-title-text">Finished home projects</p>
+            </div>
+            <div class="counter-box">
+                <p class="counter">7</p>
+            </div>
+        </div>
+    </div>
     <!-- SKILLS END -->
 
     <!-- PORTFOLIO START -->
 
-    <h1 class="portfolio-title" align="center">Works</h1>
+    <h1 class="portfolio-title" align="center" id="works">Works</h1>
     <h4 class="portfolio-title-sm" align="center">My Works</h4>
 
     <div class="slider">
@@ -292,7 +320,7 @@
 
     <!-- CONTACT START -->
 
-    <h1 class="portfolio-title" align="center">Contact</h1>
+    <h1 class="portfolio-title" align="center" id="contact">Contact</h1>
     <h4 class="portfolio-title-sm" align="center">Contact Me</h4>
 
     <div class="contact-container">
