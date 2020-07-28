@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://kit.fontawesome.com/8eb688fe6b.js" crossorigin="anonymous"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'/>
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 </head>
 <body>
@@ -38,9 +37,12 @@
         </header>
     </div>
 
+
+
     <!-- HEADER END -->
 
     <!-- ABOUT START -->
+
 
     <section class="about-me" id="about">
         <div class="about-wrap">
@@ -74,9 +76,20 @@
                 </div>
             </div>
         </div>
+        <div class="covid-container">
+            <div class="country-name"><p class="covid-title">COVID 19</p></div>
+            <div class="country-name"><img src="img/svg/austria.png" alt="Austria" width="70px" style="border-radius: 20px; margin-bottom: 20px"></div>
+            <div class="covid-box"><p class="co-title">Cases</p><p class="co-count" id="cases"></p></div>
+            <div class="covid-box"><p class="co-title">Deaths</p><p class="co-count" id="deaths"></p></div>
+            <div class="covid-box"><p class="co-title">Percent</p><p class="co-count"  id="percent"></p></div>
+            <div class="icons-cov"><img src="img/svg/mask.png" alt="mask" width="60px"></div>
+            <div class="icons-cov"><img src="img/svg/hands.png" alt="hand" width="60px"></div>
+            <div class="icons-cov"><img src="img/svg/sanitizer.png" alt="hand" width="60px"></div>
+        </div>
     </section>
 
     <!-- ABOUT END -->
+
 
     <!-- EDUCATION START -->
     <h1 class="edu-title" align="center" id="education">Education</h1>
@@ -374,8 +387,9 @@
         </div>
     </div>
 
+
+    </div>
     <p id="showScroll"></p>
     <script src="main.js"></script>
-    <!-- FOOTER END -->
 </body>
 </html>

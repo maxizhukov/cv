@@ -1,6 +1,36 @@
+window.onload = function() {
+    getCovidStats();
+}
+
+function getCovidStats() {
+    fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/16')
+        .then(function(resp) { return resp.json() })
+        .then(function(data) {
+            let population = data.location.country_population;
+            let update = data.location.last_updated;
+            let confirmedCases = data.location.latest.confirmed;
+            let deaths = data.location.latest.deaths;
+
+            document.getElementById('cases').innerHTML = confirmedCases.toLocaleString('en');
+            document.getElementById('deaths').innerHTML = deaths.toLocaleString('en');
+            document.getElementById('percent').innerHTML = ((Number(deaths)/Number(confirmedCases))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%";
+
+
+
+
+        })
+        .catch(function() {
+            console.log("error");
+        })
+    setTimeout(getCovidStats, 43200000) // update every 12 hours
+}
+
+
+
 const header = document.querySelector('.header')
 const anchors = document.querySelectorAll('a[href*="#"]')
 const hourText = document.querySelector('.counter-hours')
+const covidCon = document.querySelector('.covid-container')
 
 
 for (let anchor of anchors) {
@@ -20,10 +50,22 @@ for (let anchor of anchors) {
 window.addEventListener('scroll', function() {
     if (pageYOffset > 40) {
         header.style.background = 'rgba(0, 0, 0, 0.9)'
-    } else {
+        covidCon.style.transform = 'translateX(0px)'
+    }
+    else {
         header.style.background = 'rgba(0, 0, 0, 0.4)'
+        pageYOffset > 1600
     }
 });
+window.addEventListener('scroll', function() {
+    if (pageYOffset > 2100 && pageYOffset < 3000) {
+        covidCon.style.transform = 'translateX(-100px)'
+    }
+    if (pageYOffset > 4300) {
+        covidCon.style.transform = 'translateX(-100px)'
+    }
+});
+
 
 //SLIDER
 var slideIndex = 1;
