@@ -624,7 +624,7 @@ li {
 #map {
     margin-left: 60px;
     border-radius: 3px;
-    width: 700px;
+    width: 33vw;
     height: 500px;
 }
 
@@ -740,3 +740,17 @@ li {
     background: white;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1330px) {
+    .skills__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #map {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+}
+
