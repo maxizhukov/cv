@@ -54,7 +54,6 @@ window.addEventListener('scroll', function() {
     }
     else {
         header.style.background = 'rgba(0, 0, 0, 0.4)'
-        pageYOffset > 1600
     }
 });
 window.addEventListener('scroll', function() {
