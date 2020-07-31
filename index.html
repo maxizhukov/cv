@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Max Zhukov</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
@@ -65,7 +65,7 @@
         <div class="about-wrap">
             <div class="about-cards">
                 <div class="about-card">
-                    <img src="./img/max.jpg" alt="photo" class="photo" width="400px" height="400px">
+                    <img src="./img/max.jpg" alt="photo" class="photo">
                     <div class="social-links-first">
                         <a href="https://www.facebook.com/maksym.zhukov?fref=profile_friend_list&hc_location=friends_tab" target="_blank" class="social-link">
                             <img src="./img/svg/facebooklogo.svg" alt="facebook" class="link-social" width="40px" height="40px">
@@ -102,6 +102,18 @@
             <div class="icons-cov"><img src="img/svg/mask.png" alt="mask" width="60px"></div>
             <div class="icons-cov"><img src="img/svg/hands.png" alt="hand" width="60px"></div>
             <div class="icons-cov"><img src="img/svg/sanitizer.png" alt="hand" width="60px"></div>
+        </div>
+        <div class="mobile-covid-container">
+            <p class="mobile-covid-title">COVID 19</p>
+            <div class="mobile-covid-box">
+                <img src="img/svg/austria.png" class="cov-flag" alt="Austria" width="60px">
+                <div class="covid-box-mob"><p class="co-title-mob">Cases</p><p class="co-count-mob" id="cases">20,558</p></div>
+                <div class="covid-box-mob"><p class="co-title-mob">Deaths</p><p class="co-count-mob" id="deaths">713</p></div>
+                <div class="covid-box-mob"><p class="co-title-mob">Percent</p><p class="co-count-mob"  id="percent">3.47%</p></div>
+                <div class="icons-cov-mob"><img src="img/svg/mask.png" alt="mask" class="cov-ico" width="60px"></div>
+                <div class="icons-cov-mob"><img src="img/svg/hands.png" alt="hand" class="cov-ico" width="60px"></div>
+                <div class="icons-cov-mob"><img src="img/svg/sanitizer.png" alt="hand" class="cov-ico" width="60px"></div>
+            </div>
         </div>
     </section>
 
@@ -399,21 +411,21 @@
     <!-- FOOTER START -->
 
     <div class="footer-container">
-        <a href="index.html" class="footer-logo"><img class="header-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="250px"></a>
+        <a href="index.html" class="footer-logo"><img class="footer-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="250px"></a>
         <div class="social-links-footer">
-            <a href="https://www.facebook.com/maksym.zhukov?fref=profile_friend_list&hc_location=friends_tab" target="_blank" class="social-link">
+            <a href="https://www.facebook.com/maksym.zhukov?fref=profile_friend_list&hc_location=friends_tab" target="_blank" class="social-link-footer">
                 <img src="./img/svg/facebooklogo.svg" alt="facebook" class="link-social-footer" width="60px" height="60px">
             </a>
-            <a href="https://www.youtube.com/channel/UC1qrkzwCcAYuIkCNSqAmw7A?view_as=subscriber" target="_blank" class="social-link">
+            <a href="https://www.youtube.com/channel/UC1qrkzwCcAYuIkCNSqAmw7A?view_as=subscriber" target="_blank" class="social-link-footer">
                 <img src="./img/svg/youtubeicon.svg" alt="youtube" class="link-social-footer" width="60px" height="60px">
             </a>
-            <a href="https://github.com/maxizhukov" target="_blank" class="social-link">
+            <a href="https://github.com/maxizhukov" target="_blank" class="social-link-footer">
                 <img src="./img/svg/githubicon.svg" alt="github" class="link-social-footer" width="60px" height="60px">
             </a>
-            <a href="https://www.linkedin.com/in/maksym-zhukov-89508b1a9/" target="_blank" class="social-link">
+            <a href="https://www.linkedin.com/in/maksym-zhukov-89508b1a9/" target="_blank" class="social-link-footer">
                 <img src="./img/svg/linkedinlogo.svg" alt="linkedin" class="link-social-footer" width="60px" height="60px">
             </a>
-            <a href="https://www.instagram.com/zhukov_m23/?hl=de" target="_blank" class="social-link">
+            <a href="https://www.instagram.com/zhukov_m23/?hl=de" target="_blank" class="social-link-footer">
                 <img src="./img/svg/instagramicon.svg" alt="instagram" class="link-social-footer" width="60px" height="60px">
             </a>
         </div>

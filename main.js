@@ -1,7 +1,14 @@
 window.onload = function() {
     getCovidStats();
+    covidMobile()
 }
 
+
+function covidMobile() {
+    if (document.documentElement.clientWidth < 1331) {
+        covidCon.style.display = 'none'
+    }
+}
 
 function getCovidStats() {
     fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/16')
@@ -58,12 +65,13 @@ window.addEventListener('scroll', function() {
     }
 });
 window.addEventListener('scroll', function() {
-    if (document.documentElement.clientWidth > 1331)
+    if (document.documentElement.clientWidth > 1331) {
     if (pageYOffset > 2650 && pageYOffset < 3500) {
         covidCon.style.transform = 'translateX(-100px)'
     }
     if (pageYOffset > 4700) {
         covidCon.style.transform = 'translateX(-100px)'
+    }
     }
 });
 
