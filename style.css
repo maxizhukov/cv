@@ -176,6 +176,10 @@ li {
 .edu-title-sm {
     transform: translateY(-157px);
 }
+.certificate {
+    text-decoration: none;
+    color: black;
+}
 
 .timeline {
     position: relative;
@@ -680,6 +684,7 @@ li {
 
 .link-social-footer {
     opacity: 0.6;
+    margin-left: 20px;
 }
 
 .link-social-footer:hover {
