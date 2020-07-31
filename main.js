@@ -2,6 +2,7 @@ window.onload = function() {
     getCovidStats();
 }
 
+
 function getCovidStats() {
     fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/16')
         .then(function(resp) { return resp.json() })
@@ -57,10 +58,11 @@ window.addEventListener('scroll', function() {
     }
 });
 window.addEventListener('scroll', function() {
-    if (pageYOffset > 2100 && pageYOffset < 3000) {
+    if (document.documentElement.clientWidth > 1331)
+    if (pageYOffset > 2650 && pageYOffset < 3500) {
         covidCon.style.transform = 'translateX(-100px)'
     }
-    if (pageYOffset > 4300) {
+    if (pageYOffset > 4700) {
         covidCon.style.transform = 'translateX(-100px)'
     }
 });
