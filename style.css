@@ -98,6 +98,11 @@ h4 {
 .header-logo {
     margin: 30px 30px;
 }
+
+.cv {
+    text-decoration: none;
+}
+
 .header-nav {
     margin-right: 100px;
 }
@@ -764,6 +769,16 @@ li {
 }
 
 @media screen and (max-width: 1330px) {
+    .header {
+        height: 90px;
+    }
+    .header-logo {
+        width: 160px;
+    }
+    .link {
+        font-size: 20px;
+    }
+
     .skills__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -827,15 +842,6 @@ li {
 }
 
 @media screen and (max-width: 1160px) {
-    .header {
-        height: 90px;
-    }
-    .header-logo {
-        width: 160px;
-    }
-    .link {
-        font-size: 20px;
-    }
     .timeline {
         width: 700px;
     }
@@ -847,7 +853,7 @@ li {
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1050px) {
    .header {
        display: none;
    }
