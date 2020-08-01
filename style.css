@@ -375,7 +375,7 @@ li {
     grid-template-columns: repeat(4, 1fr);
 }
 .skill__card {
-    transform: translateY(-100px);
+    margin-top: -100px;
     margin-left: auto;
     margin-right: auto;
     width: 320px;
@@ -396,7 +396,7 @@ li {
     font-size: 18px;
 }
 .skills-small{
-    transform: translateY(-190px);
+    margin-top: -100px;
     padding-left: 80px;
     padding-right: 80px;
     display: grid;
@@ -406,6 +406,7 @@ li {
     margin-right: 20px;
     margin-left: 20px;
 }
+
 .align {
     text-align: center;
 }
@@ -419,6 +420,7 @@ li {
 }
 
 .skills-counter-container {
+    margin-top: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -432,6 +434,7 @@ li {
     height: 150px;
     background-color: #1a1919;
     border-radius: 10px;
+    --animate-duration: 2s;
 }
 
 .counter-title {

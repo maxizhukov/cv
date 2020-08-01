@@ -1,7 +1,16 @@
 window.onload = function() {
     getCovidStats();
     covidMobile()
+    createSignature()
 }
+
+function createSignature() {
+    setTimeout(() => {
+        const signatureCon = document.querySelector('.signature')
+        signatureCon.src = 'http://localhost:63342/CV/gif/animatedsignmax.gif'
+    }, 1500)
+}
+
 
 
 function covidMobile() {
