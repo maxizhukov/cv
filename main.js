@@ -7,7 +7,7 @@ window.onload = function() {
 function createSignature() {
     setTimeout(() => {
         const signatureCon = document.querySelector('.signature')
-        signatureCon.src = 'http://localhost:63342/CV/gif/animatedsignmax.gif'
+        signatureCon.src = 'gif/animatedsignmax.gif'
     }, 1500)
 }
 
