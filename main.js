@@ -1,6 +1,5 @@
 window.onload = function() {
     getCovidStats();
-    covidMobile()
     createSignature()
 }
 
@@ -11,13 +10,6 @@ function createSignature() {
     }, 1500)
 }
 
-
-
-function covidMobile() {
-    if (document.documentElement.clientWidth < 1331) {
-        covidCon.style.display = 'none'
-    }
-}
 
 function getCovidStats() {
     fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/16')
@@ -47,7 +39,7 @@ function getCovidStats() {
 const header = document.querySelector('.header')
 const anchors = document.querySelectorAll('a[href*="#"]')
 const hourText = document.querySelector('.counter-hours')
-const covidCon = document.querySelector('.covid-container')
+const covidBox = document.querySelector('.covid-container')
 
 
 for (let anchor of anchors) {
@@ -67,20 +59,18 @@ for (let anchor of anchors) {
 window.addEventListener('scroll', function() {
     if (pageYOffset > 40) {
         header.style.background = 'rgba(0, 0, 0, 0.9)'
-        covidCon.style.transform = 'translateX(0px)'
     }
     else {
         header.style.background = 'rgba(0, 0, 0, 0.4)'
     }
 });
+
+// COVID
 window.addEventListener('scroll', function() {
-    if (document.documentElement.clientWidth > 1331) {
-    if (pageYOffset > 2650 && pageYOffset < 3500) {
-        covidCon.style.transform = 'translateX(-100px)'
-    }
-    if (pageYOffset > 4700) {
-        covidCon.style.transform = 'translateX(-100px)'
-    }
+    if (pageYOffset > 200 && pageYOffset < 4600) {
+        covidBox.style.display = 'flex'
+    } else {
+        covidBox.style.display = 'none'
     }
 });
 

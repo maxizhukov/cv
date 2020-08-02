@@ -36,9 +36,9 @@
         </nav>
     </div>
 
-    <div class="container">
+    <div class="container" id="start">
         <header class="header">
-            <img class="header-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="250px">
+            <a href="#start" class="link"><img class="header-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="180px"></a>
                 <nav class="header-nav">
                     <a href="certificates/MaksymZhukovCV.docx" class="btn btn-one" download target="_blank">
                         <span class="link cv-link">CV Download</span>
@@ -100,27 +100,17 @@
                 </div>
             </div>
         </div>
+        <div class="cov-wrapper">
         <div class="covid-container">
             <div class="country-name"><p class="covid-title">COVID 19</p></div>
-            <div class="country-name"><img src="img/svg/austria.png" alt="Austria" width="70px" style="border-radius: 20px; margin-bottom: 20px"></div>
-            <div class="covid-box"><p class="co-title">Cases</p><p class="co-count" id="cases">20,558</p></div>
-            <div class="covid-box"><p class="co-title">Deaths</p><p class="co-count" id="deaths">713</p></div>
-            <div class="covid-box"><p class="co-title">Percent</p><p class="co-count"  id="percent">3.47%</p></div>
-            <div class="icons-cov"><img src="img/svg/mask.png" alt="mask" width="60px"></div>
-            <div class="icons-cov"><img src="img/svg/hands.png" alt="hand" width="60px"></div>
-            <div class="icons-cov"><img src="img/svg/sanitizer.png" alt="hand" width="60px"></div>
+            <div class="country-name"><img src="img/svg/austria.png" alt="Austria" width="50px" style="border-radius: 20px; margin-bottom: 0px"></div>
+            <div class="covid-box"><p class="co-title">Cases</p><p class="co-count" id="cases">21,212</p></div>
+            <div class="covid-box"><p class="co-title">Deaths</p><p class="co-count" id="deaths">718</p></div>
+            <div class="covid-box"><p class="co-title">Percent</p><p class="co-count"  id="percent">3.38%</p></div>
+            <div class="icons-cov"><img src="img/svg/mask.png" alt="mask" width="45px"></div>
+            <div class="icons-cov"><img src="img/svg/hands.png" alt="hand" width="35px"></div>
+            <div class="icons-cov"><img src="img/svg/sanitizer.png" alt="hand" width="45px"></div>
         </div>
-        <div class="mobile-covid-container">
-            <p class="mobile-covid-title">COVID 19</p>
-            <div class="mobile-covid-box">
-                <img src="img/svg/austria.png" class="cov-flag" alt="Austria" width="60px">
-                <div class="covid-box-mob"><p class="co-title-mob">Cases</p><p class="co-count-mob" id="cases">20,558</p></div>
-                <div class="covid-box-mob"><p class="co-title-mob">Deaths</p><p class="co-count-mob" id="deaths">713</p></div>
-                <div class="covid-box-mob"><p class="co-title-mob">Percent</p><p class="co-count-mob"  id="percent">3.47%</p></div>
-                <div class="icons-cov-mob"><img src="img/svg/mask.png" alt="mask" class="cov-ico" width="60px"></div>
-                <div class="icons-cov-mob"><img src="img/svg/hands.png" alt="hand" class="cov-ico" width="60px"></div>
-                <div class="icons-cov-mob"><img src="img/svg/sanitizer.png" alt="hand" class="cov-ico" width="60px"></div>
-            </div>
         </div>
     </section>
 
@@ -389,16 +379,16 @@
     <h1 class="portfolio-title wow animate__animated animate__zoomIn" align="center" id="contact">Contact</h1>
     <h4 class="portfolio-title-sm" align="center">Contact Me</h4>
 
-    <div class="contact-container">
-    <div id='map'></div>
-    <div class="contact">
-        <div class="contact-div wow animate__animated animate__bounceInRight">
-        <p class="phone"><i class="fas fa-phone-square-alt"></i>+4368181269902</p>
+    <div class="contact-new-container">
+        <div class="contact">
+            <div class="contact-div wow animate__animated animate__bounceInLeft">
+                <p class="phone"><i class="fas fa-phone-square-alt"></i>+4368181269902</p>
+            </div>
+            <div class="contact-div wow animate__animated animate__bounceInLeft">
+                <p class="mail"><i class="fas fa-envelope"></i>zhukovmax1111@gmail.com</p>
+            </div>
         </div>
-        <div class="contact-div wow animate__animated animate__bounceInRight">
-            <p class="mail"><i class="fas fa-envelope"></i>zhukovmax1111@gmail.com</p>
-        </div>
-    </div>
+        <div id='map' class="map"></div>
     </div>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoiemh1a292bTczIiwiYSI6ImNrY3c1c3E1OTBiMW4zMHF1d2huZXgza24ifQ.oz5rDG9NJ_AmrpcgMrHkJQ';
@@ -406,7 +396,7 @@
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
             center: [16.406156, 48.218232],
-            zoom: 13
+            zoom: 12.5
         });
         var marker = new mapboxgl.Marker()
             .setLngLat([16.406156, 48.218232])
@@ -419,26 +409,16 @@
 
     <!-- FOOTER START -->
 
-    <div class="footer-container">
-        <a href="index.html" class="footer-logo"><img class="footer-logo" src="./img/svg/maxlogo.svg" alt="logo Max Zhukov" width="250px"></a>
-        <div class="social-links-footer">
-            <a href="https://www.facebook.com/maksym.zhukov?fref=profile_friend_list&hc_location=friends_tab" target="_blank" class="social-link-footer">
-                <img src="./img/svg/facebooklogo.svg" alt="facebook" class="link-social-footer" width="60px" height="60px">
-            </a>
-            <a href="https://www.youtube.com/channel/UC1qrkzwCcAYuIkCNSqAmw7A?view_as=subscriber" target="_blank" class="social-link-footer">
-                <img src="./img/svg/youtubeicon.svg" alt="youtube" class="link-social-footer" width="60px" height="60px">
-            </a>
-            <a href="https://github.com/maxizhukov" target="_blank" class="social-link-footer">
-                <img src="./img/svg/githubicon.svg" alt="github" class="link-social-footer" width="60px" height="60px">
-            </a>
-            <a href="https://www.linkedin.com/in/maksym-zhukov-89508b1a9/" target="_blank" class="social-link-footer">
-                <img src="./img/svg/linkedinlogo.svg" alt="linkedin" class="link-social-footer" width="60px" height="60px">
-            </a>
-            <a href="https://www.instagram.com/zhukov_m23/?hl=de" target="_blank" class="social-link-footer">
-                <img src="./img/svg/instagramicon.svg" alt="instagram" class="link-social-footer" width="60px" height="60px">
-            </a>
+    <footer>
+        <a href="#start" class="link"><img class="footer-logo" src="img/svg/maxlogo.svg" alt="maxlogo" width="200px"></a>
+        <div class="footer-links">
+            <a class="footer-link" href="https://www.facebook.com/maksym.zhukov?fref=profile_friend_list&hc_location=friends_tab" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="footer-link" href="https://www.youtube.com/channel/UC1qrkzwCcAYuIkCNSqAmw7A?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="footer-link" href="https://github.com/maxizhukov" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="footer-link" href="https://www.linkedin.com/in/maksym-zhukov-89508b1a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="footer-link" href="https://www.instagram.com/zhukov_m23/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-    </div>
+    </footer>
 
     <p id="showScroll"></p>
     <script src="main.js"></script>
