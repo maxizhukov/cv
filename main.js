@@ -114,6 +114,6 @@ function showSlides(n) {
 // SKILLS COUNTER
 const date = '2020-04-04T00:00:00.000Z'
 let currentDate = Date.parse(new Date())
-let hours = Math.round(((currentDate - Date.parse(date))/86400000) * 4)
+let hours = Math.round(((currentDate - Date.parse(date))/86400000) * 6)
 hourText.innerText = hours
 
