@@ -26,6 +26,52 @@ h4 {
     padding: 0 15px;
 }
 
+/* POPUP START */
+
+.popup{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-110px);
+    z-index: 2000;
+}
+
+.popup-box{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+}
+
+.close-popup{
+    margin-left: 473px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.pop-text{
+    margin-left: 8px;
+}
+.pop-count{
+    margin-left: 15px;
+}
+.pop-btn-plus{
+    margin-left: 20px;
+}
+.pop-btn-min{
+    margin-left: 5px;
+}
+.skills-input {
+    width: 100%;
+}
+
+/* POPUP END */
+
+
 /* HEADER START */
 .wrapper-burger {
     display: none;
@@ -94,7 +140,7 @@ h4 {
     justify-content: space-between;
     transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2000;
+    z-index: 1000;
 }
 .header-logo {
     margin-top: 10px;
@@ -326,15 +372,6 @@ li {
     position: absolute;
     transition: inherit;
     z-index: -1;
-}
-
-.btn-timeline:hover {
-    color: black;
-    transition-delay: .5s;
-}
-
-.btn-timeline:hover:before {
-    transition-delay: 0s;
 }
 
 .btn-timeline:hover:after {
