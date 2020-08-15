@@ -781,6 +781,7 @@ footer {
     bottom: 0;
     width: 680px;
     height: 60px;
+    margin-right: 60px;
     background-color: rgba(226, 217, 217, 1);
     border-radius: 10px 10px 0 0;
     color: black;
